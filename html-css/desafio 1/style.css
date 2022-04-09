@@ -1,0 +1,133 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;}
+
+
+@font-face { 
+font-family:'android';
+src: url(fontes/idroid.otf) format('opentype');
+
+    
+}
+
+@font-face { font-family: 'bebaneue';
+src: url(fontes/BebasNeue-Regular.ttf) format('opentype');
+
+}
+
+:root { 
+
+    --cor0: #c5ebd6;
+    --cor1: #83E1AD;
+    --cor2: #3DDC84;
+    --cor3:#2FA866;
+    --cor4:#1A5C37;
+    --cor5:#073d1e;
+    --fonte0: Arial,helvetica, sans-serif;
+    --fonteoriginal: 'bebaneue', cursive;
+    --fontedestaque: 'Android', cursive;
+
+}
+
+body { 
+    background-color: var(--cor0);
+    font-family: var(--fonte0);
+}
+header { 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.274);
+    padding: 20px;
+    color: white;
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
+    min-width: 150px;
+
+}
+header > h1 { 
+    font-family: var(--fonteoriginal);
+    font-size: 3em;
+    text-shadow:1px 1px 1px rgba(0, 0, 0, 0.863);
+    text-align: center;
+}
+header > p { 
+    text-shadow:1px 1px 1px rgba(0, 0, 0, 0.548);
+    text-align: center;
+    margin:10px;
+    color: rgb(255, 255, 255);
+
+}
+article > h1 { 
+     font-family: var(--fontedestaque);
+     color: var(--cor4);
+}
+article > h2 {
+    font-family: var(--fontedestaque);
+    color: var(--cor4);
+ }
+nav { 
+    padding:2px;
+    width:100%;
+}
+    nav > a {   text-decoration: none;
+                list-style: none;
+                color: white;
+                padding:6px;
+                font-weight: bolder;
+                transition-duration: 0.3s;
+                border-radius: 10px;
+}
+
+nav > a:hover { 
+    background-color: #237e4c;;
+}
+
+main { margin:auto;
+        max-width: 1000px;
+        min-width: 300px;
+        background-color: white;
+        padding:5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.274); 
+    }
+main p { 
+    text-justify: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size:1em;
+}
+article { 
+        padding:10px;
+}
+ article > p { padding:10px
+}
+
+
+article > h1, h2 {
+    padding-left: 20px;
+}
+    
+
+img { width:100%}
+
+.pequena { width: 50%;
+                margin:auto;
+            display: block;
+    }
+
+footer > p {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding:0px;
+    margin:0px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.212);
+    font-size:13px;}
+
+footer a { 
+    color:white;
+    list-style: none;
+    text-decoration: none;  
+}
+footer a:hover {
+    color: rgb(136, 136, 136);
+    text-decoration: dashed;
+}
