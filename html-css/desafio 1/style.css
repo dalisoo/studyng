@@ -17,7 +17,7 @@ src: url(fontes/BebasNeue-Regular.ttf) format('opentype');
 }
 
 :root { 
-
+ 
     --cor0: #c5ebd6;
     --cor1: #83E1AD;
     --cor2: #3DDC84;
@@ -39,7 +39,7 @@ header {
     padding: 20px;
     color: white;
     background-image: linear-gradient(to bottom, var(--cor2), var(--cor5));
-    min-width: 150px;
+    min-width: 151px;
 
 }
 header > h1 { 
