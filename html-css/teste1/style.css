@@ -1,0 +1,86 @@
+* { 
+    margin: 0;
+    padding:0;
+}
+
+@font-face { 
+    font-family:'updock';
+    src: url(fontes/Updock/Updock-Regular.ttf) format('opentype');
+
+}
+@font-face { 
+    font-family:'square';
+    src: url(fontes/Square_Peg/SquarePeg-Regular.ttf) format('opentype');
+
+}
+
+body { 
+    background-color: #3a0b01;
+   background-image: url(img/4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+:root { 
+
+    --cor01:#B02A05;
+    --cor2:#632F21;
+    --cor3:#e33707a6;
+    --cor4:#E86E4C;
+    --cor5:#631803;
+    --fonte1: 'updock',helvetica,sans-serif;
+    --fonte2: 'square', arial,sans-serif;
+
+}
+
+#quadrado-pizza { 
+    height:30px;
+    background-color: black;
+    display: inline-block;
+}
+header { 
+    background-color: var(--cor3);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.281);
+    height:60px
+
+}
+nav { text-align: end;}
+
+img { 
+    width:100px;
+    position: absolute;
+    top: -25px;
+}
+nav > a { 
+    text-decoration: none;
+    list-style: none;
+    font-size:40px;
+    color: white;
+    font-family: var(--fonte2);
+    padding: 30px;      
+}
+
+nav > a:hover { 
+    color: var(--cor01);
+    transition-duration: 0.8s;
+    text-shadow: 1px 1px 1px 1px;
+}
+
+header > nav { 
+    padding: 1px 1px 1px 1px;
+}
+
+
+#caixa1 { 
+    margin-top: 150px;
+    margin-left: 20px;
+    width:600px;
+    height:400px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-image: url(img/123.png);
+    background-repeat: no-repeat;
+    background-size:100%;
+}
