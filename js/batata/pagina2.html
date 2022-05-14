@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina 2</title>
+    <style>
+* { 
+    margin:0;
+    padding:0;
+
+}
+
+body { 
+    background: rgb(107, 107, 253);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main  { 
+    width:100%
+}
+
+#area { 
+        background-color:green;
+        color:#fff;
+        width:300px;
+        height:300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin:auto;
+        margin-top:100px;
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        border-radius: 20px;
+}
+h1 { 
+    text-align:center;
+    margin-top:30px;
+    color:white;
+}
+
+a {
+    color:white;
+    text-decoration: none;
+
+}
+a:hover { 
+    text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+    <main>
+        <div id="area">
+                Não clique!
+        </div> 
+        <h1><a href="index.html"> Ao clicar vamos voltar ao primeiro exemplo</a></h1>
+
+            <script>
+                var area = window.document.getElementById('area')
+                    area.addEventListener('click', clicar)
+                    area.addEventListener('mouseenter', entrar)
+                    area.addEventListener('mouseout', sair)
+
+                    function clicar() { 
+                        area.innerText='você é pobre'
+                        area.style.background='red'
+        }
+                    function entrar() { 
+                        area.innerText = 'NÃO CLIQUE MESMO'
+
+                    }
+                    
+                    function sair() { 
+                        area.style.background='green'
+                        area.style.color='white'
+                        area.innerText='Não clique!'
+                    }
+            </script>
+    </main>
+</body>
+</html>

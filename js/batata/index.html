@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PAGINA 1</title>
+</head>
+<body>
+<main>
+    <div id="area">
+
+    </div>
+
+    <h1><a href="pagina2.html"> Ao clicar vamos para outro exemplo</a></h1>
+    <script>
+
+        
+        var area = window.document.getElementById('area')
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+
+
+  /*
+
+        function clicar() { 
+            area.innerText='você é pobre'
+            area.style.background='red'
+        }
+        function entrar() { 
+            area.innerText = 'NÃO CLIQUE MESMO'
+
+        }
+        
+        function sair() { 
+            area.style.background='green'
+            area.style.color='white'
+            area.innerText='Não clique!'
+        }
+
+        TESTE 
+        */
+
+
+        function clicar() { 
+            area.style.backgroundImage='url(img/pika3.jpg)'
+        }
+
+        function entrar() { 
+            area.style.backgroundImage='url(img/pika2.jpg)'
+
+        }
+
+        function sair() { 
+            area.style.backgroundImage='url(img/pika1.jpg)'
+
+        }
+
+
+
+    
+    </script>
+    
+</main>
+</body>
+</html>
