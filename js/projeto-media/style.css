@@ -1,0 +1,96 @@
+* { 
+    margin:0;
+    padding:0;
+    box-sizing: border-box
+}
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+body { 
+    background-color:#fafbfd ;
+}
+
+
+.box { 
+    display:flex;
+    flex-direction: column;
+    width:550px;
+    height:550px;
+    margin:auto;
+    padding:20px; 
+    font-family: 'Fjalla One', sans-serif;
+    font-size:1rem;
+    background-color: #451776;
+    color:white;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.11);
+    border-radius:10px;
+
+}
+
+
+.box h1 { 
+    text-align:center;
+    font-size:2rem;
+    margin-bottom:25px;
+    font-weight: bolder;
+}
+hr { 
+    width:100px;
+    height:1px;
+    background-color: rgba(255, 255, 255, 0.548);
+    border: 1px solid rgba(0, 0, 0, 0.158);
+    margin-left:200px;
+    margin-bottom:10px;
+    
+}
+@media (max-width: 600px)
+{ 
+    .box { 
+        width:360px;
+        height:580px;
+        
+    }
+    hr { 
+        margin-left:120px;
+    }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+} 
+
+input  { 
+    padding:4px;
+    font-size:1rem;
+    margin-top:5px;
+    border:none;
+    border-radius:10px;
+}
+
+
+.btn { 
+    margin-bottom: 10px;
+    padding:5px;
+    text-transform: uppercase;
+    border-radius:5px;
+    border: 1px solid rgba(255, 255, 255, 0.459);
+    cursor: pointer;
+    background-color:#60116A;
+    color:white;
+}
+.btn:hover{ 
+    background-color:#b123c4;
+    color:rgb(255, 255, 255);
+    font-weight:bolder
+
+
+}
+
+#res { 
+    padding:10px;
+    text-align:justify
+}

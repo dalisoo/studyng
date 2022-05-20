@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ESCOLA </title>
+</head>
+<body>
+    <div class="box">
+        <h1> SISTEMA DE NOTAS </h1>
+        <hr>
+        Digite seu nome: <input type="text" name="txtname" id="txtname"> <br>
+        Qual sua primeira nota? : <input type="number" id="txtn1" name="txtn2"> <br>
+        Qual sua segunda nota? : <input type="number" id="txtn2" name="txtn2"> <br>
+        Qual sua terceira nota? : <input type="number" id="txtn3" name="txtn3"> <br>
+        <input type="button" value="verificar" onclick="calcular()" class="btn">
+        <div id="res">
+        </div>
+    </div>
+
+    <script>
+            function calcular() { 
+                var txtn1 = window.document.getElementById('txtn1')
+                var txtn2 = window.document.getElementById('txtn2')
+                var txtn3 = window.document.getElementById('txtn3')
+
+                var res = window.document.getElementById('res')
+                var nome = window.document.getElementById('txtname').value;
+                var n1 = Number(txtn1.value)
+                var n2 = Number(txtn2.value)
+                var n3 = Number(txtn3.value)
+                
+                var soma = n1 + n2 + n3
+                var media = (n1 + n2 + n3 ) / 3 
+                
+                res.innerHTML += `  <p> Olá <strong> ${nome}</strong> seu resultado está abaixo: </p>` 
+                if(media >= 6) {
+                    
+             res.innerHTML += `<p> A soma da media é : ${media} </p> ` 
+             res.innerHTML += `<p> Parbéns, VOCÊ FOI APROVADO!! </p> ` 
+             res.style.backgroundColor = 'green'
+             res.style.color='white'
+
+                } else { 
+                res.innerHTML += ` <p> A soma da media é: ${media} </p> `
+                res.innerHTML += `<p> Infelizmente, VOCÊ FOI REPROVADO.  </p> `
+                res.innerHTML += `<p> Mas não desanime, continue estudando! </p> `
+                res.style.backgroundColor = 'red'
+                res.style.color='white'
+                }
+            
+            }
+    </script>
+    
+</body>
+</html>
