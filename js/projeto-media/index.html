@@ -36,21 +36,29 @@
                 var media = (n1 + n2 + n3 ) / 3 
                 
                 res.innerHTML += `  <p> Olá <strong> ${nome}</strong> seu resultado está abaixo: </p>` 
-                if(media >= 6) {
-                    
-             res.innerHTML += `<p> A soma da media é : ${media} </p> ` 
-             res.innerHTML += `<p> Parbéns, VOCÊ FOI APROVADO!! </p> ` 
-             res.style.backgroundColor = 'green'
-             res.style.color='white'
-
-                } else { 
-                res.innerHTML += ` <p> A soma da media é: ${media} </p> `
-                res.innerHTML += `<p> Infelizmente, VOCÊ FOI REPROVADO.  </p> `
-                res.innerHTML += `<p> Mas não desanime, continue estudando! </p> `
-                res.style.backgroundColor = 'red'
-                res.style.color='white'
+ if(media >= 9) {
+    res.innerHTML += `<p> A soma da media é : ${media} </p> ` 
+    res.innerHTML += `<p> Parbéns, VOCÊ FOI APROVADO!! </p> `
+    res.innerHTML += `<p> Você antigiu a nota máxima, continue estudando. </p> ` 
+    res.style.backgroundColor = 'green'
+    res.style.color='white'
+        } 
+        else { 
+            if ( media>=6 ) { 
+            res.innerHTML += ` <p> A soma da media é: ${media} </p> `
+            res.innerHTML += `<p> Parabéns, você foi APROVADO  </p> `
+            res.innerHTML += `<p> Você atingiu a nota média, continue estudando </p> `
+            res.style.backgroundColor = 'yellow'
+            res.style.color='black'
                 }
-            
+                    else { 
+                    res.innerHTML += ` <p> A soma da media é: ${media} </p> `
+                    res.innerHTML += `<p> Infelizmente, você foi REPROVADO!!  </p> `
+                    res.innerHTML += `<p> Mas não desanime, continue estudando. </p> `
+                    res.style.backgroundColor = 'red'
+                    res.style.color='white'
+                    }
+                } 
             }
     </script>
     
