@@ -1,21 +1,44 @@
-function carregar() { 
-var msg = window.document.getElementById('msg')
-var img = window.document.getElementById('imagem')
-var data = new Date ()
-var hora = data.getHours()
-var min = data.getMinutes()
-msg.innerHTML = ` Agora são ${hora} horas e ${min} minutos.`
+function verificar() { 
+    var data = new Date ()
+    var ano = data.getFullYear()
+    var fano = document.getElementById('txtano')
+    var res = document.getElementById('res')
+    if ( fano.value.length == 0 || Number(fano.value) > ano ) { 
+        window.alert('[ERROR] Verifique novamente as informações')
 
- if (hora >=0 && hora <12) { 
-     img.src = 'bomdia.png'
-     document.body.style.background='#be935d'
- } else if ( hora >=12 && hora <18) { 
-     img.src ='boatarde.png'
-     document.body.style.background='#afafaf'
+    }
+    else { 
+     var fsex = document.getElementsByName('radsex')
+     var idade = ano - Number(fano.value)
+     var genero =  ''
+     var img = document.createElement('img')
+     img.setAttribute('id','foto')
+     if ( fsex[0].checked) {
+         genero = 'homem'
+         if ( idade >=0 && idade < 16 ) // CRIANÇA
+            { img.setAttribute('src' , 'criança-m.png') } 
+         else if ( idade < 30 ) { 
+             img.setAttribute('src', 'jovem-m.png')
+         }
+         else {
+             img.setAttribute('src', 'idoso-m.png')
+         }   
+    
+     }
+     else if (fsex[1].checked) { 
+         genero = 'mulher'
 
- } else { 
-     img.src = 'boanoite.png'
-     document.body.style.background='rgb(30 28 27)'
-
- }
+         if ( idade >=0 && idade < 16 ) // CRIANÇA
+            { img.setAttribute('src' , 'criança-f.png') } 
+         else if ( idade < 30 ) { 
+             img.setAttribute('src', 'jovem-f.png')
+         } 
+         else {
+            img.setAttribute('src', 'idoso-f.png')
+         }   
+     }
+     res.innerHTML = ` Detectamos ${genero} com ${idade} anos.`
+     res.appendChild(img)
+    }
+    
 }
