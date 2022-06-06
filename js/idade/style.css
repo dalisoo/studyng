@@ -18,8 +18,9 @@ font-weight: bolder;
 
 img { 
 border-radius: 50%;
-width:300px;
-height:300px;
+width:250px;
+height:250px;
+background-size: cover;
 }
 
 
