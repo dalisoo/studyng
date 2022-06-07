@@ -4,9 +4,7 @@
     var genero = ''
     var img = document.createElement('img')
 
-function verificar() { 
-    var nome = document.getElementById('txt1').value;
-
+function checar1() { 
     img.setAttribute('id','foto')
     if (fsex[0].checked) {
         genero ='homem' 
@@ -16,6 +14,5 @@ function verificar() {
         genero='mulher'
         img.setAttribute('src','ashley.png.jpg')
     }
-    res.innerHTML= `Olá ${nome} verificamos que você é ${genero}`
     res.appendChild(img)    
 }

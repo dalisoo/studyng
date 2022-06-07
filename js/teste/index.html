@@ -11,16 +11,12 @@
         <main>
             <h1> TESTE AQUI SEU PERSONAGEM </h1>
                 <div class="box">
-                    <h2> Qual seu nome? </h2>
-            <label for="txt1"> 
-                <input type="text" id="txt1" name="txt1">
-            </label>
             <h2> Qual seu gênero? </h2>
             <label for="mas"> Masculino
-                <input type="radio" name="radsex" id="mas" checked>
+                <input type="radio" name="radsex" id="mas" checked onclick="checar1()">
             </label>
             <label for="fem"> Feminino
-                <input type="radio" name="radsex" id="fem">
+                <input type="radio" name="radsex" id="fem" onclick="checar1()"">
             </label>
             <input type="button" value="checar" onclick="verificar()" class="botao">
                 </div>
