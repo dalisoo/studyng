@@ -4,49 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TESTE </title>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
-    <H1> TESTE DO LEON OU ASHLEY</H1>
-    <div class="box">
-        <p> ESCOLHA SE VOCÊ É HOMEM OU MULHER </p>
-        <label for="mas"> Masculino
-        <input type="radio" id="mas" name="radsex" checked>
-                                                            </label>
-                                                            <br>
-        <label for="fem"> Feminimo
-            <input type="radio" id="fem" name="radsex" ></label>
-            <input type="button" value="checar" onclick="verificar()">
+        <main>
+            <h1> TESTE AQUI SEU PERSONAGEM </h1>
+                <div class="box">
+                    <h2> Qual seu nome? </h2>
+            <label for="txt1"> 
+                <input type="text" id="txt1" name="txt1">
+            </label>
+            <h2> Qual seu gênero? </h2>
+            <label for="mas"> Masculino
+                <input type="radio" name="radsex" id="mas" checked>
+            </label>
+            <label for="fem"> Feminino
+                <input type="radio" name="radsex" id="fem">
+            </label>
+            <input type="button" value="checar" onclick="verificar()" class="botao">
+                </div>
+                <div id="res">
+                    
+                </div>
+                    
+                
+        </main>
 
-    </div>
-    <div id="res">
-a
-    </div>
 
 
-    <script>
-        function verificar() { 
-        var res = document.getElementById('res')
-        var genero = ''
-        var fsex = document.getElementsByName('radsex')
-        var img = document.createElement('img')
-        img.setAttribute('id','foto')
-        if (fsex[0].checked) {
-            genero='homem' 
-            
-            img.setAttribute('src','leon.png.jpg') 
-            }
-        
-        else if (fsex[1].checked) {
-            genero='mulher'
-             
-            img.setAttribute('src','ashley.png.jpg') 
-            
-              
-    }
-        res.appendChild(img)    
-    
-}
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
