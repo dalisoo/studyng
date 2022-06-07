@@ -1,0 +1,468 @@
+a { 
+    list-style: none;
+    color:rgb(255, 0, 0);
+    font-weight: bolder;
+    text-decoration: none;
+}
+li { 
+    text-decoration: none;
+    list-style: none;
+}
+@font-face {
+    font-family: 'pokemom';
+    src: url('pokemon/Pokemon\ Solid.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'flexo';
+    src: url('Flexo-Demi/Flexo-Demi.ttf') format('truetype');
+  }
+
+
+/* CONFIGURAÇÕES */
+* { 
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+body { 
+    background: #fff url(img1/body.fundo.png);
+    overflow-x: hidden
+    
+}
+header { 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    padding: 10px 30px;
+    background-color: #fff;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.308);
+}
+
+header img { 
+    width:100px;
+    margin:5px 3px;
+}
+
+nav { 
+    display:flex;
+}
+
+
+nav li { 
+    padding:7px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bolder;
+    font-family: "Roboto",arial,sans-serif;
+    border: 1px solid rgba(0, 0, 0, 0.349);
+    margin: 7px;
+    border-radius:20px;
+    background-color: #FFCB05;
+}
+nav li > a { 
+    color:#3a5da8
+}
+nav li:hover { 
+    background-color: #3a5da8;
+    transition-duration: 0.7s;
+}
+nav li > a:hover { 
+    color:#FFCB05;
+    transition-duration: 0.7s;
+}
+
+
+@media (max-width:700px) { 
+    
+    header img { margin-bottom: 0px;
+    }
+    
+    
+    
+}
+                                /* CONFIGURAÇÃO DE HEADER  */
+
+
+.pokedex { 
+    
+    background-color: white;
+    width:85%;
+    margin-top:30px;
+    margin-left:100px;
+    padding:10px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    padding-left:15px;
+    border-radius: 0px 50px 0px 0px;
+}
+
+.pokedex img { 
+        width:200px;
+        padding-left:30px;
+}
+main { 
+    background: #fff url(img1/body.fundo.png);
+}
+container { 
+    width:1100px;
+    background-color:white;
+    margin:auto;
+    margin-top:10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.box1, .box2 { 
+    display: flex;
+    flex-direction: row;}
+#perso1Img { 
+    width:230px;
+    height:230px;
+    padding-top:10px;
+    margin:auto;
+    margin-top:10px;
+    background-image: url(img1/Bulbasaur.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition-duration: 0.2s;
+}
+#perso2Img { 
+    width:230px;
+    height:230px;
+    padding-top:10px;
+    margin:auto;
+    margin-top:10px;
+    background-image: url(img1/Charmander.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition-duration: 0.2s;
+}
+#perso3Img { 
+    width:230px;
+    height:230px;
+    padding-top:10px;
+    margin:auto;
+    margin-top:10px;
+    background-image: url(img1/squirtle1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition-duration: 0.2s;
+}
+#perso4Img { 
+    width:230px;
+    height:230px;
+    padding-top:10px;
+    margin:auto;    
+    margin-top:10px;
+    background-image: url(img1/Cleffa.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition-duration: 0.2s;
+}
+#perso5Img { 
+    width:230px;
+    height:230px;
+    padding-top:10px;
+    margin:auto;
+    margin-top:10px;
+    background-image: url(img1/Nidoran.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition-duration: 0.2s;
+}#perso6Img { 
+    width:230px;
+    height:230px;
+    padding-top:10px;
+    margin:auto;
+    margin-top:10px;
+    background-image: url(img1/Pichu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition-duration: 0.2s;
+}
+
+
+.botaos { 
+    display: flex;
+    position: absolute;
+
+}
+
+#perso1Btn1 { 
+    position: absolute;
+    right: 15px;
+    top: 266px;
+    width: 25px;
+    height: 25px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    border: none;
+    color:rgb(87, 87, 87);
+    cursor: pointer;
+
+}
+
+#perso1Btn2 { 
+    position: absolute;
+    right: -25px;
+    top: 266px;
+    width: 25px;
+    height: 25px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    border: none;
+    color:rgb(87, 87, 87);
+    cursor: pointer;
+
+}
+#perso1Btn1:hover, #perso1Btn2:hover { 
+    background-color: #818181;
+    transition-duration: 0.6s;
+    color:white
+
+
+}
+#q1 { 
+    width:300px;
+    height:300px;
+    background-color:#bdbdbd;
+    margin:33px;
+    text-align:center;
+    padding:7px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+}
+ 
+#q1 h2, #q2 h2 { 
+    color:#313131;
+    font-family: 'flexo';
+    display: flex;
+    font-weight: bold;
+    text-transform: none;   
+}
+#q2 { 
+    width:300px;
+    height:300px;
+    background-color:#bdbdbd;
+    margin:33px;
+    text-align:center;
+    padding:7px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+                                        /* FOTOS */
+@media (max-width:1050px) { 
+    .pokedex { 
+    
+        width:90%;
+        margin:auto;
+        margin-top:40px;
+        justify-content: center;
+        margin-bottom:20px;
+    }
+    container { 
+        width:850px;
+        background-color:white;
+        margin-top:10px;
+        margin:auto;
+    }
+    .box1,.box2 { 
+        margin:auto
+    }
+    #q1,#q2 { 
+        width:220px;
+        height:220px;
+        margin: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #perso1Img, #perso2Img,#perso3Img,#perso4Img,#perso5Img,#perso6Img  { 
+        width:150px;
+        height:150px;
+        flex-direction: column;
+    }
+    #perso1Btn1 { 
+        position: absolute;
+        right: 15px;
+        top: 188px;
+        width: 20px;
+        height: 20px;
+        font-size: 1.2rem;
+        border-radius: 50%;
+        border: none;
+    }
+    
+    #perso1Btn2 { 
+        position: absolute;
+        right: -25px;
+        top: 188px;
+        width: 20px;
+        height: 20px;
+        font-size: 1.2rem;
+        border-radius: 50%;
+        border: none;
+    }
+}
+
+@media (max-width:750px) { 
+    
+    container { 
+        width:800px;
+        background-color:white;
+        margin-top:10px;
+        margin:auto;
+        padding:20px;
+    }
+    .box1,.box2 { 
+
+        display: flex;
+        flex-wrap: wrap;
+        margin:20px;
+    }
+    #q1,#q2 { 
+        width:300px;
+        height:300px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #perso1Img, #perso2Img,#perso3Img,#perso4Img,#perso5Img,#perso6Img { 
+        width:230px;
+        height:230px;
+        flex-direction: column;
+
+    }
+    #perso1Btn1 { 
+        position: absolute;
+        right: 15px;
+        top: 265px;
+        width: 20px;
+        height: 20px;
+        font-size: 1.2rem;
+        border-radius: 50%;
+        border: none;
+    }
+    
+    #perso1Btn2 { 
+        position: absolute;
+        right: -17px;
+        top: 265px;
+        width: 20px;
+        height: 20px;
+        font-size: 1.2rem;
+        border-radius: 50%;
+        border: none;
+    }
+}
+@media (max-width:650px) { 
+    header { 
+        flex-direction: column;
+        padding:0;
+        margin:0;
+    } 
+    container { 
+            width:500px;
+            background-color:white;
+            margin-top:10px;
+            margin:auto;
+            padding:20px;
+        }
+        .box1 { 
+            display: flex;
+            flex: wrap;
+            flex-direction: column;
+        }
+        #q1,#q2 { 
+            width:350px;
+            height:300px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        #perso1Btn1 { 
+            position: absolute;
+            right: 125px;
+            top: 139px;
+            width: 40px;
+            height: 40px;
+            font-size: 2rem;
+            border-radius: 50%;
+            border: none;
+        }
+        
+        #perso1Btn2 { 
+            position: absolute;
+            right: -165px;
+            top: 139px;
+            width: 40px;
+            height: 40px;
+            font-size: 2rem;
+            border-radius: 50%;
+            border: none;
+
+        }
+
+}
+
+footer { 
+    border-radius: 25px 25px 0px 0px;
+    margin-top:20px;
+    height:160px;
+    background-color: #202020;
+    text-align:center;
+    
+    
+}
+
+footer p { 
+    color:rgb(255, 255, 255);
+    font-size:2rem;
+    padding-top:20px;
+    padding-bottom: 20px;
+    text-align:center;
+    font-family: 'flexo';
+}
+
+#redes li img  { 
+    width:40px;
+    margin:8px;
+    background-color: rgb(105, 105, 105);
+    transition-duration: 0.5s;
+
+    
+}
+#redes li img:hover { 
+    background-color: rgba(0, 0, 0, 0.185);
+}
+
+#redes { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width:100%;
+}
+
+

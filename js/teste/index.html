@@ -4,102 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="flavicon/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <title>POKEMOM</title>
+    <title>TESTE </title>
 </head>
 <body>
-    <header>
-        <a href="#"><img src="img1/International_Pokémon_logo.svg.png" alt="fotopokemom"></a>
-        <nav>
-                <li> <a href="#">Página inicial</a> </li>
-                <li> <a href="#">Pokedex</a> </li>
-                <li> <a href="#">Sobre</a> </li>
-        </nav>
-    </header>
-    <div class="pokedex">
-        <h1> <img src="img1/dexx.png" alt=""> </h1>    
+    <H1> TESTE DO LEON OU ASHLEY</H1>
+    <div class="box">
+        <p> ESCOLHA SE VOCÊ É HOMEM OU MULHER </p>
+        <label for="mas"> Masculino
+        <input type="radio" id="mas" name="radsex" checked>
+                                                            </label>
+                                                            <br>
+        <label for="fem"> Feminimo
+            <input type="radio" id="fem" name="radsex" ></label>
+            <input type="button" value="checar" onclick="verificar()">
+
     </div>
+    <div id="res">
+a
+    </div>
+
+
+    <script>
+        function verificar() { 
+        var res = document.getElementById('res')
+        var genero = ''
+        var fsex = document.getElementsByName('radsex')
+        var img = document.createElement('img')
+        img.setAttribute('id','foto')
+        if (fsex[0].checked) {
+            genero='homem' 
+            
+            img.setAttribute('src','leon.png.jpg') 
+            }
+        
+        else if (fsex[1].checked) {
+            genero='mulher'
+             
+            img.setAttribute('src','ashley.png.jpg') 
+            
+              
+    }
+        res.appendChild(img)    
     
-    <main>
-        <container>
-            <article class="box1">
-                <div id="q1">
-                    <h2 id="res1">Bulbasaur </h2>
-                    <div id="perso1Img" class="foto-1"> </div>
-                    <div class="botaos">
-                        <input type="button" value="<" id="perso1Btn1" onclick="clicar1()" ondblclick="sair1()">
-                        <input type="button" value=">" id="perso1Btn2" onclick="entrar1()" ondblclick="sair1()">
-                    </div>
-        
-                </div>
-                <div id="q1">
-                    <h2 id="res2">Charmander</h2>
-                    <div id="perso2Img" class="foto-2"  > </div>
-                    <div class="botaos">
-                        <input type="button" value="<" id="perso1Btn1" onclick="clicar2()" ondblclick="sair2()">
-                        <input type="button" value=">" id="perso1Btn2" onclick="entrar2()" ondblclick="sair2()">
-                    </div>
-        
-                </div>
-                <div id="q1">
-                    <h2 id="res3">Squirtle</h2>
-                    <div id="perso3Img" class="foto-3" > </div>
-                    <div class="botaos">
-                        <input type="button" value="<" id="perso1Btn1" onclick="clicar3()" ondblclick="sair3()">
-                        <input type="button" value=">" id="perso1Btn2" onclick="entrar3()" ondblclick="sair3()">
-                    </div>
-                </div>
-            </article>
-                            <!---  PRIMEIRO BLOCO A CIMA *-*  -->
-                <article class="box2">
-                    <div id="q2">
-                        <h2 id="res4">Cleffa </h2>
-                        <div id="perso4Img" class="foto-4"> </div>
-                        <div class="botaos">
-                            <input type="button" value="<" id="perso1Btn1" onclick="clicar4()" ondblclick="sair4()">
-                            <input type="button" value=">" id="perso1Btn2" onclick="entrar4()" ondblclick="sair4()">
-                        </div>
-                        </div>
-
-                    <div id="q2">
-                        <h2 id="res5">Nidoran</h2>
-                        <div id="perso5Img" class="foto-5"> </div>
-                        <div class="botaos">
-                            <input type="button" value="<" id="perso1Btn1" onclick="clicar5()" ondblclick="sair5()">
-                            <input type="button" value=">" id="perso1Btn2" onclick="entrar5()" ondblclick="sair5()">
-                        </div>
-                        </div> 
-                        
-                    <div id="q2">
-                        <h2 id="res6">Pichu</h2>
-                        <div id="perso6Img" class="foto-6"> </div>
-                        <div class="botaos">
-                            <input type="button" value="<" id="perso1Btn1" onclick="clicar6()" ondblclick="sair6()">
-                            <input type="button" value=">" id="perso1Btn2" onclick="entrar6()" ondblclick="sair6()">
-                        </div>
-                        </div>
-                        
-                </article>
-
-        </container>
-    </main>
-        <footer>
-            <p> Redes sociais </p>
-            <div id="redes">
-                <li> <a href="https://github.com/danzinh2" target="_blank"><img src="img1/github.png" alt="github" ></a></li>
-                <li> <a href="https://www.facebook.com/senhor.newba" target="_blank"><img src="img1/facebook.png" alt="facebook"></a></li>
-                <li> <a href="https://www.instagram.com/dtalisson._/" target="_blank"><img src="img1/instagram.png" alt="instagram"></a></li>
-            </div>
-        </footer>
-    <script src="script.js"></script>
-        
+}
+    </script>
 </body>
 </html>
