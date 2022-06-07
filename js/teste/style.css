@@ -28,6 +28,7 @@ li {
 
 body { 
     background: #fff url(img1/body.fundo.png);
+    overflow-x: hidden
     
 }
 header { 
@@ -52,7 +53,7 @@ nav {
 }
 
 
-li { 
+nav li { 
     padding:7px;
     text-transform: uppercase;
     font-size: 1rem;
@@ -63,28 +64,26 @@ li {
     border-radius:20px;
     background-color: #FFCB05;
 }
-li > a { 
+nav li > a { 
     color:#3a5da8
 }
-li:hover { 
+nav li:hover { 
     background-color: #3a5da8;
     transition-duration: 0.7s;
 }
-li > a:hover { 
+nav li > a:hover { 
     color:#FFCB05;
     transition-duration: 0.7s;
 }
 
 
-@media (max-width:900px) { 
-    header { 
-        flex-direction: column;
-    } 
-    header img { margin-bottom: 10px;
+@media (max-width:700px) { 
+    
+    header img { margin-bottom: 0px;
     }
-    li { 
-        font-size:1rem;
-    }
+    
+    
+    
 }
                                 /* CONFIGURAÇÃO DE HEADER  */
 
@@ -92,13 +91,14 @@ li > a:hover {
 .pokedex { 
     
     background-color: white;
-    width:90%;
-    margin-top:20px;
-    margin-left:50px;
+    width:85%;
+    margin-top:30px;
+    margin-left:100px;
     padding:10px;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     padding-left:15px;
+    border-radius: 0px 50px 0px 0px;
 }
 
 .pokedex img { 
@@ -276,7 +276,7 @@ container {
     
         width:90%;
         margin:auto;
-        margin-top:20px;
+        margin-top:40px;
         justify-content: center;
         margin-bottom:20px;
     }
@@ -377,6 +377,11 @@ container {
     }
 }
 @media (max-width:650px) { 
+    header { 
+        flex-direction: column;
+        padding:0;
+        margin:0;
+    } 
     container { 
             width:500px;
             background-color:white;
@@ -421,5 +426,43 @@ container {
 
 }
 
+footer { 
+    border-radius: 25px 25px 0px 0px;
+    margin-top:20px;
+    height:160px;
+    background-color: #202020;
+    text-align:center;
+    
+    
+}
+
+footer p { 
+    color:rgb(255, 255, 255);
+    font-size:2rem;
+    padding-top:20px;
+    padding-bottom: 20px;
+    text-align:center;
+    font-family: 'flexo';
+}
+
+#redes li img  { 
+    width:40px;
+    margin:8px;
+    background-color: rgb(105, 105, 105);
+    transition-duration: 0.5s;
+
+    
+}
+#redes li img:hover { 
+    background-color: rgba(0, 0, 0, 0.185);
+}
+
+#redes { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width:100%;
+}
 
 
