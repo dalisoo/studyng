@@ -5,29 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="favicon_package_v0.16/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>Valorant </title>
 </head>
 <body>
-        <main>
-            <h1> TESTE AQUI SEU PERSONAGEM </h1>
-                <div class="box">
-            <h2> Qual seu gênero? </h2>
-            <label for="mas"> Masculino
-                <input type="radio" name="radsex" id="mas" checked onclick="checar1()">
+    <header>
+        
+        <nav> 
+            <div class="foto">
+                <a href="#">
+                    <img src="img/riotgames.png" alt="riotgames">
+                           </a>
+                           <a href="#">
+                    <img src="img/valorant.png" alt="valorant">
+                           </a>
+            </div>  
+            <a href="#">
+                <li>informações do jogo</li> 
+            </a>
+            <a href="#">
+                <li>mídia</li>
+            </a>
+            <a href="#">
+                <li>notícias</li>
+            </a>
+            <a href="#">
+                <li>placar</li>
+            </a>
+            <a href="#">
+                <li>suporte</li>
+            </a>
+            <a href="#">
+                <li>social</li>
+            </a>
+            <div class="end">
+                <a href="#">
+                    <li> Jogue agora</li>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main id="hero">
+        <section>
+            <h3> Um jogo de tiro tático 5x5 com personagens originais</h3>
+            <img src="img/valorantnome.png" alt="valorantnome">
+            <a href="#"><input type="button" value="jogue grátis" id="botao"></a>
+        </section>
+        <section class="radios"> 
+            <label for="phoenix"> Phoenix
+                <input type="radio" id="phoenix" name="radsex" checked onclick="verificar()">
             </label>
-            <label for="fem"> Feminino
-                <input type="radio" name="radsex" id="fem" onclick="checar1()"">
+            <label for="jett"> Jett
+                <input type="radio" id="jett" name="radsex" onclick="verificar()">
             </label>
-            <input type="button" value="checar" onclick="verificar()" class="botao">
-                </div>
-                <div id="res">
-                    
-                </div>
-                    
-                
-        </main>
-
-
+            <label for="raze"> Raze
+                <input type="radio" id="raze" name="radsex" onclick="verificar()">
+            </label>
+            <label for="fade"> Fade
+                <input type="radio" id="fade" name="radsex" onclick="verificar()">
+            </label>
+        </section>
+    </main>
+    
 
     <script src="script.js"></script>
 </body>
